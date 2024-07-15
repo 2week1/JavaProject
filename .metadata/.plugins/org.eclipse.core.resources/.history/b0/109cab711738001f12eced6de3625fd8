@@ -1,0 +1,17 @@
+package com.kh.practice;
+
+import java.io.*;
+
+public class IO02_BufferedOutputStream {
+
+	public static void main(String[] args) {
+		// 출력 파일 대상 객체
+		File f = new File (".resources", "OutputTest.txt");
+		
+		
+		//파일 출력 스트림 객체
+		FileOutputStream fos = null;
+		BufferedOutputStream bos = null;
+	}
+
+}

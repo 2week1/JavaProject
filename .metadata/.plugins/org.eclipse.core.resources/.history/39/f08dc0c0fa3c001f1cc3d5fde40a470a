@@ -1,0 +1,19 @@
+package com.kh.practice.set.view;
+
+public class LotteryMenu {
+
+	public void mainMenu() {
+		System.out.println("========== KH 추첨 프로그램 ==========");
+
+
+		
+	}
+	public void insertObject() {}
+	
+	public void deleteObject() {}
+	
+	public void winObject() {}
+	
+	public void searchWinner() {}
+
+}

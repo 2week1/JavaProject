@@ -1,0 +1,23 @@
+package com.kh.practice;
+
+
+//직렬화 적용: Serializable 인터페이스 구현(상속)
+class Student {
+	String name;
+	int age;
+	double height;
+	
+	public Student(String name, int age, double height) {
+		this.name = name;
+		this.age = age;
+		this.height = height;
+	}
+	public String toString() {
+		return "Student [name="+name+", age ="+age+", height ="+height+"]";
+	}
+}
+public class IO06_ObjectOutputStream {
+	public static void main(String[] args) {
+		
+	}
+} 

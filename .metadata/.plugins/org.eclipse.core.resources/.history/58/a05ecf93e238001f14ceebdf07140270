@@ -1,0 +1,47 @@
+package com.kh.practice.book.view;
+
+import java.util.Scanner;
+
+import com.kh.practice.book.controller.BookController;
+
+public class BookMenu {
+	Scanner sc = new Scanner(System.in);
+	BookController bc = new BookController();
+	
+	public BookMenu() {}
+	
+	public void mainMenu() {
+		System.out.println("1. 도서 추가 저장");
+		System.out.println("2. 저장 도서 출력");
+		System.out.println("9. 프로그램 끝내기");
+		System.out.println("메뉴 번호 : ");
+		
+		int menu = sc.nextInt();
+		sc.nextLine();
+		
+		switch(menu) {
+		case 1:
+			fileSave();
+			break;
+		case 2:
+			fileRead();
+			break;
+		case 9:
+			System.out.println("프로그램을 종료합니다.");
+			return;			//메소드 종료: 호출위치로 돌아감..!!
+		
+			default:
+				System.out.println("잘못 입력하셨습니다. 다시 입력해주세요");
+		}
+	}
+		
+	}
+	public void fileSave() {
+		
+	}
+	public void fileRead() {
+		
+	}
+	
+	
+}

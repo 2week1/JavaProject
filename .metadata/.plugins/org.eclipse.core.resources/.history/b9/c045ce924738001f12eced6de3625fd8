@@ -1,0 +1,32 @@
+package com.kh.practice.file.model.dao;
+
+import java.io.File;
+
+public class FileDAO {
+	
+		String path = "./resources/files";
+		
+		public FileDAO() {
+			//path 변수에 저장된 경로가 없을 경우 폴더 생성
+			File f = new File(path);
+		}
+		
+		public boolean checkName(String file) {
+
+			
+		}
+		
+		public void fileSave(String file, String s) {
+			
+		}
+		
+		public StringBuilder fileOpen(String file) {
+			return null;
+			
+		}
+		
+		public void fileEdit(String file, String s) {
+			
+		}
+		
+}

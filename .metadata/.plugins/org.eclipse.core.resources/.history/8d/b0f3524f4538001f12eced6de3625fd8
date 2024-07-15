@@ -1,0 +1,28 @@
+package com.kh.practice.file.controller;
+
+import com.kh.practice.file.model.dao.FileDAO;
+
+public class FileController {
+	
+	private FileDAO fd = new FileDAO();
+	
+	public boolean checkName(String file) {
+		boolean result = fd.checkName(file);
+		return result;
+		
+		//return fd.cheakName(file); 		//호출한 결과를 그대로 return
+	}
+	public void fileSave(String file, StringBuilder sb){
+		String content = sb.toString();
+		fd.fileSave(file, content);
+		
+		//fd.fileSave(file, sb.toString()); 랑 같음
+		
+	}
+	
+	public StringBuilder fileOpen(String file){
+		fd.fileOpen(;)
+		}
+	
+	public void fileEdit(String file, StringBuilder sb){}
+}

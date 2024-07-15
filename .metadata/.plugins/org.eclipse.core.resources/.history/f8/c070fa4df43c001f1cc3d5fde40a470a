@@ -1,0 +1,25 @@
+package com.kh.practice.set;
+
+public class Person {
+	private String name;		//이름
+	private int age;			//나이
+	private double height; 		//키
+	
+	//모든 필드의 값이 일치하면 동일한 객체로 판단 :equals, hashCode
+	
+	@Override
+	public int hashCode() {
+		String info = name + age + height;
+		return info.hashCode();
+	}
+	@Override
+	public boolean equals(Object obj) {
+		return super.equals(obj);
+	}
+	
+	
+
+	
+	
+	
+}

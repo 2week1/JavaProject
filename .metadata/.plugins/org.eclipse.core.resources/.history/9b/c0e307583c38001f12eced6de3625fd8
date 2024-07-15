@@ -1,0 +1,6 @@
+package com.kh.practice.file.controller;
+
+public class FileController {
+	private boolean(String file) {}
+
+}

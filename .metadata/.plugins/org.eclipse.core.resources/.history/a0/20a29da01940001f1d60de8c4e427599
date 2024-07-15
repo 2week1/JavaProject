@@ -1,0 +1,19 @@
+package com.kh.ch11_api;
+
+public class API02_String {
+	public static void main(String[] args) {
+		//java.lang.String
+		System.out.println("==== java.lang.String ====");
+		
+		String str = "Hello, World!";
+		
+		// toString() : 저장된 값을 반환 (오버라이딩)
+		System.out.println(str/*.toString()*/);
+		
+		//문자열.charAt(인덱스) : char (캐릭터 타입)
+		//	=> 문자열에서 해당 인덱스 위치의 문자를 추출해서 반환
+		
+		System.out.println("인덱스 7번 위치의 문자 : " + str.charAt(7));
+	}
+
+}

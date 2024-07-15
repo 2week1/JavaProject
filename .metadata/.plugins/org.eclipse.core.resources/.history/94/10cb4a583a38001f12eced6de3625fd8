@@ -1,0 +1,29 @@
+package com.kh.practice.file.view;
+
+import java.util.Scanner;
+
+import com.kh.practice.file.controller.FileController;
+
+public class FileMenu {
+	private Scanner sc = new Scanner(System.in);
+	private FileController fc = new FileController();
+	
+	public void mainMenu() {
+		try {
+			System.out.println("****My Note****")
+		}
+	}
+	
+	public void fileSave() {
+		
+	}
+	
+	public void fileOpen() {
+		
+	}
+	
+	public void fileEdit() {
+		
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.kh.phone&apos; to &apos;com.kh.phone.model.vo&apos;&#x0D;&#x0A;- Original project: &apos;10_PhoneBook&apos;&#x0D;&#x0A;- Original element: &apos;10_PhoneBook/src/com.kh.phone&apos;&#x0D;&#x0A;- Renamed element: &apos;10_PhoneBook/src/com.kh.phone.model.vo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.kh.phone&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.kh.phone" name="com.kh.phone.model.vo" qualified="false" references="true" stamp="1719990205261" textual="false" version="1.0"/>
+</session>

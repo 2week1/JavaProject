@@ -1,0 +1,17 @@
+package com.kh.ch09_interface;
+
+public class Monstera extends Plant {
+	public Monstera(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public void sprinkleWater() {
+		
+	}
+
+	@Override
+	public void baskSun() {
+		
+	}
+}

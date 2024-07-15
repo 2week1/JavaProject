@@ -1,0 +1,39 @@
+package com.kh.practice;
+
+import java.io.*;
+
+public class IO04_DataOutputStream {
+
+	public static void main(String[] args) {
+
+		//출력 파일 객체 생성
+		File f = new File("./resources", "DataSample");
+		
+		//데이터 출력 스트림 선언
+		DataOutputStream dos = null;
+		
+		try {
+		//스트림 생성
+				//파일 출력 스트림 -> 버퍼 출력 스트림 -> 데이터 출력 스트림
+		dos = new DataOutputStream(
+				new BufferedOutputStream(
+					new FileOutputStream(f)
+					)
+				);
+			dos.write(83); 		//아스키코드
+			
+			dos.writeBoolean(true);		//1B
+			dos.writeChar('J');			//2B
+			dos.writeDouble(3.141592);	//8B
+			dos.writeInt(369);			//4B
+			
+			dos.flush();
+			
+	}catch (FileNotFoundException e) {
+		
+	}catch (IOException e) {
+		
+	}
+	}
+
+}

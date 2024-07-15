@@ -1,0 +1,51 @@
+package com.kh.practice;
+
+import java.io.*;
+public class IO03_CopyOfBuffered {
+
+	public static void main(String[] args) {
+		// BufferedInputStream과  BufferedOutputStream을 이용하여
+		// resources/src.txt ----> resources/dst.txt 복사
+		
+		//파일 객체
+		File src = new File("./resources/src.txt");
+		File dst = new File("./resources/dst.txt");
+		
+		// TODO: 입출력 스트림 객체 선언
+		BufferedInputStream bis = null;
+		BufferedOutputStream bos = null;
+		// TODO: 입출력 데이터 관련 변수 선언
+		byte[] buf = new byte[1024];
+		int len = -1;
+		int total = 0;		//총 입출력 길이 저장을 위한 변수
+		
+		try {
+			// TODO: 파일 입출력 스트림 생성
+			bis = new BufferedInputStream(new FileInputStream(src));
+			bos = new BufferedOutputStream(new FileOutputStream(dst));
+			
+			// 파일 입력 및 출력 (파일 복사)
+			while ( (len = bis.read(buf)) != -1) {	//파일 입력(데이터를 읽어오기)
+				bos.write(buf, 0, len);
+				bos.flush();
+				
+				total += len;
+			}
+		} catch(FileNotFoundException e) {
+			e.printStackTrace();
+			
+		}catch(IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if(bis !=null) bis.close();
+				if(bos !=null) bos.close();
+			} catch(IOException e) {
+				System.out.println("[ERROR] 스트림 객체 반납 실패! ");
+				e.printStackTrace();
+			}
+		}
+		// TODO: 복사된 총 파일 길이 출력
+	}
+
+}

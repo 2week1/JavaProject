@@ -1,0 +1,71 @@
+package com.kh.phone.model.vo;
+
+public class PhoneBook {
+	private String name;
+	private int phone;
+	private String group;
+	private String email;
+	private String memo;
+	
+	public PhoneBook() {
+		super();
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getCall() {
+		return phone;
+	}
+
+	public void setCall(int call) {
+		this.phone = call;
+	}
+
+	public String getWith() {
+		return group;
+	}
+
+	public void setWith(String with) {
+		this.group = with;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getNote() {
+		return memo;
+	}
+
+	public void setNote(String note) {
+		this.memo = note;
+	}
+
+	@Override
+	public String toString() {
+		return "Phone [name=" + name + ", call=" + phone + ", with=" + group + ", email=" + email + ", note=" + memo
+				+ "]";
+	}
+
+	public PhoneBook(String name, int call, String with, String email, String note) {
+		super();
+		this.name = name;
+		this.phone = call;
+		this.group = with;
+		this.email = email;
+		this.memo = note;
+	}
+	
+	
+	
+}

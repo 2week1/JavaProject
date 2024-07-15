@@ -1,0 +1,12 @@
+package com.kh.ch11_api;
+
+public class API01_Math {
+	public static void main(String[] args) {
+		System.out.println("===== java.lang.Math =====");
+		
+		// abs : 절대값을 구해주는 메소드
+		int n = 100;
+		System.out.println("-10의 절댓값 : " + Math.abs(-10));
+		System.out.println( n + "의 절댓값 :" + Math.abs(n));
+	}
+}

@@ -1,0 +1,20 @@
+package com.kh.practice.book.model.vo;
+
+public class Book  {
+	public Book() {}
+	
+	private String title;
+	private String author;
+	private int price;
+	private Calendar date;
+	private double discount;
+	
+	public Book(String title, String author, int price, Calendar date, double discount) {
+        this.title = title;
+        this.author = author;
+        this.price = price;
+        this.date = date;
+        this.discount = discount;
+    }
+	
+}

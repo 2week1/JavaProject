@@ -1,0 +1,10 @@
+package com.kh.ch02_operator;
+
+public class OperatorRun {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

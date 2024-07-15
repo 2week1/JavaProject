@@ -1,0 +1,33 @@
+package com.kh.ch05_object;
+
+public class Animal {
+	// 정보 은닉
+	private String name;	// 이름
+	private int age;		// 나이
+	private char gender;	// 성별
+	private String masterName;// 주인 이름
+	private String type; 	// 종
+	
+	
+	//캡슐화
+	public void setName(String name) {
+		this.name = name;
+		
+	}
+	public String getName() {
+		return name;
+	}
+	
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+	
+	public void setGender(char gender) {
+		this.gender = gender;
+		
+	}
+}

@@ -1,0 +1,40 @@
+package com.kh.practice;
+
+import java.io.*;
+public class IO03_CopyOfBuffered {
+
+	public static void main(String[] args) {
+		// BufferedInputStream과  BufferedOutputStream을 이용하여
+		// resources/src.txt ----> resources/dst.txt 복사
+		
+		//파일 객체
+		File src = new File("./resources/src.txt");
+		File dst = new File("./resources/dst.txt");
+		
+		// TODO: 입출력 스트림 객체 선언
+		
+		// TODO: 입출력 데이터 관련 변수 선언
+
+		
+		try (InputStream in = new FileInputStream(src);
+			OutputStream out = new FileOutputStream(dst)){
+			
+			int data;
+			
+			while(true) {
+				
+			data = in.read();
+			if(data == -1)
+				break;
+			out.write(data);
+			}
+			// TODO: 파일 입출력 스트림 생성
+			
+			// TODO: 파일 입력 및 출력 (파일 복사)
+		} catch() {
+			
+		}
+		// TODO: 복사된 총 파일 길이 출력
+	}
+
+}

@@ -1,0 +1,27 @@
+package com.kh.practice.book.model.dao;
+
+import com.kh.practice.book.model.vo.Book;
+
+public class BookDAO {
+	private Book[] bArr = new Book[10];
+	
+	
+	public void fileSave(Book[] bArr) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("book.txt"))) {
+            for (Book book : bArr) {
+                if (book != null) {
+                    oos.writeObject(book);
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+	
+	
+	public Book[] fileRead() {
+		
+	}
+
+	
+}

@@ -1,0 +1,16 @@
+package com.kh.phone.model.vo;
+
+public class Phone {
+	
+	private String name;
+	private int call;
+	private String with;
+	private String email;
+	private String note;
+	
+	public Phone() {}
+	
+	
+	
+	
+}

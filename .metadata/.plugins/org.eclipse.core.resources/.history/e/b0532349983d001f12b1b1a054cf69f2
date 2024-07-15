@@ -1,0 +1,16 @@
+package com.kh.practice.set.model.compare;
+
+import com.kh.practice.set.model.vo.Lottery;
+import java.util.Comparator;
+
+
+//정렬 기준을 정의하기 위한 객체
+//Comparator 인터페이스 구현
+public class SortedLottery implements Comparator<Lottery> {
+	
+    @Override
+    public int compare(Lottery o1, Lottery o2) {
+        int nameCompare = o1.getName().compareTo(o2.getName());
+        return (nameCompare != 0) ? nameCompare : o1.getPhone().compareTo(o2.getPhone());
+    }
+}

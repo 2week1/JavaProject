@@ -1,0 +1,51 @@
+package com.kh.practice.map.controller;
+
+import java.util.HashMap;
+import java.util.TreeMap;
+
+import com.kh.practice.map.model.vo.Member;
+
+public class MemberController {
+	
+	private HashMap<String, Member> map = new HashMap<>();
+	
+	
+	public boolean joinMembership(String id, Member m) {
+		if(map.containsKey(id)) {
+			return false;
+		}
+		map.put(id, m);
+		return true;
+		}
+	
+	public String logIn(String id, String password){
+
+		Member member = map.get(id);
+		if(member != null && member.getPassword().equals(password)) {
+			return member.getName();
+		}
+		return null;
+		}
+	
+	public boolean changePassword(String id, String oldPw, String newPw){
+		Member member = map.get(id);
+		if(member != null && member.getPassword().equals(oldPw)) {
+			member.setPassword(newPw);
+			return true;
+		}
+		// 아이디가 존재하면서 저장된 비밀번호와 사용자가 입력한 비밀번호(oldPw)가
+		// 같을 때 새로운 비밀번호로 바꾸고 true 반환, 아니라면 false 반환
+		return false;
+		}
+
+	
+	public void changeName(String id, String newName) {
+		Member member = map.get(id);
+		if(member != null) {
+			member.setName(newName);
+		}
+	}
+	
+	public TreeMap<String, String> sameName(String name) {
+		return null;}
+}

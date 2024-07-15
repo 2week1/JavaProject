@@ -1,0 +1,92 @@
+package com.kh.phone.model.vo;
+
+class Run{
+	public static void main(String[] args) {
+		PhoneBook pb = new PhoneBook();
+		
+		pb.getName();
+	}
+}
+
+public class PhoneBook {
+	//필드 (변수/데이터)
+	private String name;
+	private int phone;
+	private String group;
+	private String email;
+	private String memo;
+	
+	
+	//생성자 : 객체 생성을 위한 특별한 메소드, 보통 초기화 작업을 수행.
+	public PhoneBook() {
+		super();
+	}
+	
+
+	
+	public PhoneBook(String name, int call, String with, String email, String note) {
+		super();
+		this.name = name;
+		this.phone = call;
+		this.group = with;
+		this.email = email;
+		this.memo = note;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getCall() {
+		return phone;
+	}
+
+	public void setCall(int call) {
+		this.phone = call;
+	}
+
+	public String getWith() {
+		return group;
+	}
+
+	public void setWith(String with) {
+		this.group = with;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getNote() {
+		return memo;
+	}
+
+	public void setNote(String note) {
+		this.memo = note;
+	}
+
+	@Override
+	public String toString() {
+		return "PhoneBook [name=" + name + ", phone=" + phone + ", group=" + group + ", email=" + email + ", memo="
+				+ memo + "]";
+	}
+	
+	
+	//setter 메소드 : 해당 필드에 전달된 값을 저장하는 작업을 수행하는 메소드
+	public void setMemo(String memo) {
+		this.memo = memo;
+	}
+
+	
+	
+	
+	
+}
